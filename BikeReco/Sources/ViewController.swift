@@ -35,7 +35,31 @@ class ViewController: UIViewController {
     }
     
     @IBAction func videoPickerButtonTouched(_ sender: UIButton) {
-        let alertController = UIAlertController(title: "Sent", message: "Your photo has been sent", preferredStyle: .alert)
+        guard let url = URL(string: "http://127.0.0.1:8000/recognizer/") else {
+            return
+        }
+                    
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        var dateStringResponse: String!
+        
+        let semaphore = DispatchSemaphore(value: 0)
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            let dataString = String(data: data, encoding: .utf8)
+            print(dataString!)
+            dateStringResponse = dataString!
+            print(dateStringResponse!)
+            semaphore.signal()
+        }
+        task.resume()
+        _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+        let alertController = UIAlertController(title: "sent", message: dateStringResponse, preferredStyle: .alert)
 
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
           // do something
@@ -46,10 +70,7 @@ class ViewController: UIViewController {
           // do something
         }
         alertController.addAction(OKAction)
-
-        present(alertController, animated: true)
-        self.videoPicker = VideoPicker(presentationController: self, delegate: self)
-        self.videoPicker.present(from: sender)
+        self.present(alertController, animated: true)
     }
 }
 
