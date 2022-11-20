@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		160A8D36231661D3008B21A1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A8D35231661D3008B21A1 /* ImagePicker.swift */; };
-		160A8D38231665B3008B21A1 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A8D37231665B3008B21A1 /* VideoView.swift */; };
 		16BD05C123165E8000D9696A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD05C023165E8000D9696A /* AppDelegate.swift */; };
 		16BD05C323165E8000D9696A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD05C223165E8000D9696A /* SceneDelegate.swift */; };
 		16BD05C523165E8000D9696A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD05C423165E8000D9696A /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		160A8D35231661D3008B21A1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		160A8D37231665B3008B21A1 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		16BD05BD23165E8000D9696A /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BD05C023165E8000D9696A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16BD05C223165E8000D9696A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				16BD05C423165E8000D9696A /* ViewController.swift */,
 				16BD05D423165EE600D9696A /* VideoPicker.swift */,
 				160A8D35231661D3008B21A1 /* ImagePicker.swift */,
-				160A8D37231665B3008B21A1 /* VideoView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -168,7 +165,6 @@
 				160A8D36231661D3008B21A1 /* ImagePicker.swift in Sources */,
 				16BD05C123165E8000D9696A /* AppDelegate.swift in Sources */,
 				16BD05C323165E8000D9696A /* SceneDelegate.swift in Sources */,
-				160A8D38231665B3008B21A1 /* VideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

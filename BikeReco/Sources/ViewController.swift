@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     var imagePicker: ImagePicker!
@@ -15,16 +16,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var imagePickerButton: UIButton!
     
     var videoPicker: VideoPicker!
-    @IBOutlet weak var videoView: VideoView!
+//    @IBOutlet weak var videoView: VideoView!
     @IBOutlet weak var videoPickerButton: UIButton!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        self.videoView.contentMode = .scaleAspectFill
-        self.videoView.player?.isMuted = true
-        self.videoView.repeat = .loop
+//        self.videoView.contentMode = .scaleAspectFill
+//        self.videoView.player?.isMuted = true
+//        self.videoView.repeat = .loop
     }
 
     @IBAction func imagePickerButtonTouched(_ sender: UIButton) {
@@ -33,6 +35,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func videoPickerButtonTouched(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Sent", message: "Your photo has been sent", preferredStyle: .alert)
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+          // do something
+        }
+        alertController.addAction(cancelAction)
+
+        let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+          // do something
+        }
+        alertController.addAction(OKAction)
+
+        present(alertController, animated: true)
         self.videoPicker = VideoPicker(presentationController: self, delegate: self)
         self.videoPicker.present(from: sender)
     }
@@ -55,8 +70,8 @@ extension ViewController: VideoPickerDelegate {
         guard let url = url else {
             return
         }
-        self.videoView.url = url
-        self.videoView.player?.play()
+//        self.videoView.url = url
+//        self.videoView.player?.play()
     }
 }
 
