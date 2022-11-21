@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 //        self.videoView.player?.isMuted = true
 //        self.videoView.repeat = .loop
     }
-
+    
     @IBAction func imagePickerButtonTouched(_ sender: UIButton) {
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         self.imagePicker.present(from: sender)
@@ -41,13 +41,26 @@ class ViewController: UIViewController {
                     
         
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        request.httpMethod = "POST"
+        let boundary = UUID().uuidString
+        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
         var dateStringResponse: String!
         
         let semaphore = DispatchSemaphore(value: 0)
-        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+        
+        //create body start
+        var body = Data()
+        // Add the image data to the raw http request data
+        body.append("\r\n--\(boundary)\r\n".data(using: .utf8)!)
+        body.append("Content-Disposition: form-data; name=\"image\"\r\n".data(using: .utf8)!)
+        body.append("Content-Type: image/png\r\n\r\n".data(using: .utf8)!)
+        body.append(self.imageView.image!.pngData()!.base64EncodedData())
+        body.append("\r\n--\(boundary)--\r\n".data(using: .utf8)!)
+        request.httpBody = body
+        //create body finish
+        let task = URLSession.shared.uploadTask(with: request, from: body) { data, _, error in
             guard let data = data, error == nil else {
                 return
             }
