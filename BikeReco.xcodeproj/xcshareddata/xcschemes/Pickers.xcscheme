@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "16BD05BC23165E8000D9696A"
-               BuildableName = "Pickers.app"
-               BlueprintName = "Pickers"
+               BuildableName = "BikeReco.app"
+               BlueprintName = "BikeReco"
                ReferencedContainer = "container:BikeReco.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16BD05BC23165E8000D9696A"
-            BuildableName = "Pickers.app"
-            BlueprintName = "Pickers"
+            BuildableName = "BikeReco.app"
+            BlueprintName = "BikeReco"
             ReferencedContainer = "container:BikeReco.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16BD05BC23165E8000D9696A"
-            BuildableName = "Pickers.app"
-            BlueprintName = "Pickers"
+            BuildableName = "BikeReco.app"
+            BlueprintName = "BikeReco"
             ReferencedContainer = "container:BikeReco.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

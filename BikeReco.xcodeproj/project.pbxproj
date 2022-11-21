@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		160A8D35231661D3008B21A1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		16BD05BD23165E8000D9696A /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16BD05BD23165E8000D9696A /* BikeReco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeReco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BD05C023165E8000D9696A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16BD05C223165E8000D9696A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		16BD05C423165E8000D9696A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		16BD05BE23165E8000D9696A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16BD05BD23165E8000D9696A /* Pickers.app */,
+				16BD05BD23165E8000D9696A /* BikeReco.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		16BD05BC23165E8000D9696A /* Pickers */ = {
+		16BD05BC23165E8000D9696A /* BikeReco */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16BD05D123165E8200D9696A /* Build configuration list for PBXNativeTarget "Pickers" */;
+			buildConfigurationList = 16BD05D123165E8200D9696A /* Build configuration list for PBXNativeTarget "BikeReco" */;
 			buildPhases = (
 				16BD05B923165E8000D9696A /* Sources */,
 				16BD05BA23165E8000D9696A /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = Pickers;
-			productName = Pickers;
-			productReference = 16BD05BD23165E8000D9696A /* Pickers.app */;
+			name = BikeReco;
+			productName = BikeReco;
+			productReference = 16BD05BD23165E8000D9696A /* BikeReco.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16BD05BC23165E8000D9696A /* Pickers */,
+				16BD05BC23165E8000D9696A /* BikeReco */,
 			);
 		};
 /* End PBXProject section */
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16BD05D123165E8200D9696A /* Build configuration list for PBXNativeTarget "Pickers" */ = {
+		16BD05D123165E8200D9696A /* Build configuration list for PBXNativeTarget "BikeReco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16BD05D223165E8200D9696A /* Debug */,

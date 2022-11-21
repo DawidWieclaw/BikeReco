@@ -20,12 +20,12 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "AAE547A1-7167-476C-8A75-B52292545EF1 - f4fdd3c50c52de3e"
+                  uuid = "AAE547A1-7167-476C-8A75-B52292545EF1 - 760da8e43f35e36e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Pickers.ViewController.videoPickerButtonTouched(__C.UIButton) -&gt; ()"
-                  moduleName = "Pickers"
+                  symbolName = "BikeReco.ViewController.videoPickerButtonTouched(__C.UIButton) -&gt; ()"
+                  moduleName = "BikeReco"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dawidwieclaw/Documents/Projects/BikeReco/BikeReco/Sources/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
@@ -35,12 +35,12 @@
                   offsetFromSymbolStart = "4274">
                </Location>
                <Location
-                  uuid = "AAE547A1-7167-476C-8A75-B52292545EF1 - 20f39ff7c6036850"
+                  uuid = "AAE547A1-7167-476C-8A75-B52292545EF1 - f492bb73229761b4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Pickers.ViewController.videoPickerButtonTouched(__C.UIButton) -&gt; ()"
-                  moduleName = "Pickers"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BikeReco.ViewController.videoPickerButtonTouched(__C.UIButton) -&gt; ()"
+                  moduleName = "BikeReco"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dawidwieclaw/Documents/Projects/BikeReco/BikeReco/Sources/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"

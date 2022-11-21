@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func videoPickerButtonTouched(_ sender: UIButton) {
-        guard let url = URL(string: "http://127.0.0.1:8000/recognizer/") else {
+        guard let url = URL(string: "http://192.168.0.195:80/recognizer/") else {
             return
         }
                     
